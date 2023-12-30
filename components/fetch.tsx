@@ -1,13 +1,15 @@
 import axios from "axios"
 
-async function fetchMain( __id:any ) {
-    const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-    const metadata = response.data;
-    return __id ? metadata.find(({ id }:{ id:string }) => ( id == __id )) : metadata;
+async function fetchMain( __id:any, query:any ) {
+    try {
+        const response = await axios.get( 'https://jsonplaceholder.typicode.com/' + query ? query : 'users' );
+        const metadata = response.data;
+        return __id ? metadata.find(({ id }:{ id:string }) => ( id == __id )) : metadata;
+    } catch (e) { return [] }
 }
 
 export default async function Main( props:any ) {
-    const mega = await fetchMain( props.id );
+    const mega = await fetchMain( props.id, props.query );
     return (
         <pre>{ JSON.stringify( mega, null, 4 ) }</pre>
     )

@@ -6,6 +6,6 @@ import { useSearchParams } from "next/navigation"
 export default function Main() {
     const params = useSearchParams();
     return (
-        <Razer id={ params.get('id') } />
+        <Razer id={{ id:params.get('id'), query:params.get('q')}} />
     )
 }
