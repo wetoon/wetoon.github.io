@@ -9,7 +9,6 @@ export default function Main() {
          id: params.get('id'),
          query: params.get('q') 
     }
-    console.log( megadata )
     return (
         <Razer id={ megadata } />
     )
