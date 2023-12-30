@@ -10,6 +10,6 @@ export default function Main() {
          query: params.get('q') 
     }
     return (
-        <Razer id={ megadata } />
+        <Razer props={ megadata } />
     )
 }

@@ -10,7 +10,7 @@ async function fetchMain( __id:any, query:any ) {
     } catch (e) { return { code:404, message:"not found!", axios:e } }
 }
 
-export default async function Main( props:any ) {
+export default async function Main( { props }:{ props:any } ) {
     console.log( props )
     const mega = await fetchMain( props.id, props.query );
     return (
