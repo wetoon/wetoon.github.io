@@ -5,7 +5,12 @@ import { useSearchParams } from "next/navigation"
 
 export default function Main() {
     const params = useSearchParams();
+    const megadata = {
+         id: params.get('id'),
+         query: params.get('q') 
+    }
+    console.log( megadata )
     return (
-        <Razer id={{ id:params.get('id'), query:params.get('q')}} />
+        <Razer id={ megadata } />
     )
 }
