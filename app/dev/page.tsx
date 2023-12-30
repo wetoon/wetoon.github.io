@@ -1,9 +1,10 @@
 "use client"
 
 import Razer from "@component/fetch"
+import { useSearchParams } from "next/navigation"
 
-export default function Main({ searchParams }:{ searchParams:{ id:string } }) {
+export default function Main() {
     return (
-        <Razer id={ searchParams.id } />
+        <Razer id={ useSearchParams.get('id') } />
     )
 }
