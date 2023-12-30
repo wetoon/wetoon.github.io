@@ -2,8 +2,9 @@
 
 import Razer from "@component/fetch"
 
-export default function Main() {
+export default function Main({ searchParams }:{ searchParams:{ id:string } }) {
+    const id = String( searchParams.id );
     return (
-        <Razer />
+        <Razer props={ id } />
     )
 }

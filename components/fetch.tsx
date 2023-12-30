@@ -1,12 +1,12 @@
 import axios from "axios"
 
-async function fetchMain() {
+async function fetchMain( id:any ) {
     const response = await axios.get('https://jsonplaceholder.typicode.com/users')
-    return response.data
+    return response.data.find(( v ) => ( v.id == id ))
 }
 
-export default async function Main() {
-    const mega = await fetchMain();
+export default async function Main({ props }:{ props:{ id:string } }) {
+    const mega = await fetchMain( props.id );
     return (
         <pre>{ JSON.stringify( mega, null, 4 ) }</pre>
     )
