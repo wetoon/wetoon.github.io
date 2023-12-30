@@ -1,6 +1,6 @@
 "use client"
 
-import Razer from "@component/dev/fetch"
+import Razer from "../../component/dev/fetch"
 
 export default function Main() {
     return (
