@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
         background_color: '#fff',
         theme_color: '#fff',
         icons: [{
-            src: '/favicon.png',
+            src: '/favicon/android-chrome-512x512.png',
             sizes: 'any',
             type: 'image/png'
         }],
