@@ -1,6 +1,5 @@
 
 import { NextResponse } from "next/server"
-import type { NextRequest } from "next/server"
 import connect from "@lib/connect.database"
 //import Collection from "@component/collection"
 
@@ -10,11 +9,10 @@ export async function GET() {
     return NextResponse.json( { message } )
 }
 
-/*
-export async function POST( request:NextRequest ) {
+
+export async function POST( request ) {
     //await connect();
     const metadata = await request.json();
     //await Collection.member.create( metadata );
     return NextResponse.json( metadata )
 }
-*/
