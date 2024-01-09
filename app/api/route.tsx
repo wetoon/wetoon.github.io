@@ -10,7 +10,7 @@ export async function GET() {
 }
 
 
-export async function POST( request ) {
+export async function POST( request:Request ) {
     //await connect();
     const metadata = await request.json();
     //await Collection.member.create( metadata );
