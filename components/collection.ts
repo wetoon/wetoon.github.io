@@ -1,8 +1,10 @@
 import mongoose, { Schema } from "mongoose"
 
+const memberSchema = new Schema({
+    username: String,
+    password: String
+},{ timestamps:true })
+
 export default {
-    member: mongoose.model("member", new Schema({
-        username: String,
-        password: String
-    },{ timestamps:true }))
+    member: mongoose.models.Member || mongoose.model("Member", memberSchema)
 }
