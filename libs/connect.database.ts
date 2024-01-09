@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+import mongoose, { Schema } from "mongoose"
 
 export default async function connect() {
     try {
@@ -7,4 +7,11 @@ export default async function connect() {
     } catch (e) {
         return "Connection failed"
     }
+}
+
+export const Collection = {
+    member: mongoose.model("member", new Schema({
+        username: String,
+        password: String
+    },{ timestamp:true }))
 }
