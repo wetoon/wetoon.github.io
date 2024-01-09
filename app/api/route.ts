@@ -4,10 +4,10 @@ import { NextResponse } from "next/server"
 
 export async function POST( request:Request ) {
     //const message = await connect();
-    return NextResponse.json( { message } )
+    return NextResponse.json( { code:200,message:"ok" } )
 }
 
 export async function GET( request:Request ) {
     //const message = await connect();
-    return NextResponse.json( { message } )
+    return NextResponse.json( { code:200,message:"ok" } )
 }
