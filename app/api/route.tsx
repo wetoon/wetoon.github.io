@@ -1,7 +1,8 @@
 
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
-import connect, { Collection } from "@lib/connect.database"
+import connect from "@lib/connect.database"
+import Collection from "@component/collection"
 
 export async function GET() {
     await connect();
