@@ -18,7 +18,8 @@
         }],
         "baseUrl": ".",
         "paths": {
-            "@component/*": ["components/*"]
+            "@component/*": ["components/*"],
+            "@lib/*": ["libs/*"]
         }
     },
     "include": [

@@ -1,4 +1,5 @@
 import axios from "axios"
+import connectDatabase from "@lib/connect.database"
 
 async function fetchMain( __id:any, query:any ) {
     try {
@@ -10,6 +11,7 @@ async function fetchMain( __id:any, query:any ) {
 }
 
 export default async function Main( { props }:{ props:any } ) {
+    await connectDatabase();
     const mega = await fetchMain( props.id, props.query );
     return (
         <pre>{ JSON.stringify( mega, null, 4 ) }</pre>
