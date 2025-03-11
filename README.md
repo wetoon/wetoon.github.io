@@ -78,7 +78,7 @@ DISKPART> exit
 
 จากนั้นเปลี่ยน `Disk` เป็น `Z` ด้วยคำสั่ง `z:`
 ```bash
-z:
+C:\Windows\system32> z:
 ```
 
 จากนั้นเข้าถึง `EFI` ด้วยคำสั่ง `cd EFI`
@@ -119,7 +119,7 @@ Z:\EFI> C:
 C:\Windows\system32> diskpart
 ```
 
-รอประมวลผลซักครู่ และรันคำสั่ง `select volume 2`
+รอประมวลผลซักครู่ และรันคำสั่ง `select volume` ตามด้วยหมายเลข `Volume` ที่เป็น `system`
 ```bash
 DISKPART> select volume 2
 ```
