@@ -40,13 +40,18 @@ jobs:
       - name: Build code
         run: bun run build
       - name: Move dist to root
-        run: pwd && ls
+        run: |
+          mkdir /home/runner/work/wetoon.github.io/temp
+          mv dist/* /home/runner/work/wetoon.github.io/temp
+          rm -rf *
+          mv /home/runner/work/wetoon.github.io/temp/* .
+          rm -rf /home/runner/work/wetoon.github.io/temp
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/'
+          path: './'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
