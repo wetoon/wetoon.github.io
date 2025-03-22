@@ -35,18 +35,23 @@ jobs:
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-      - name: Page url
-        run: echo ${{ steps.deployment.outputs.page_url }}
       - name: Install Dependencies
         run: bun install
       - name: Build code
         run: bun run build
+      - name: Move dist to root
+        run: |
+          mkdir temp
+          mv dist/* temp/
+          rm -rf *
+          mv temp/* .
+          rm -rf temp
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
