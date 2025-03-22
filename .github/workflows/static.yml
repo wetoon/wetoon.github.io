@@ -31,27 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
-      - name: Install Dependencies
-        run: bun install
-      - name: Build code
-        run: bun run build
-      - name: Move dist to root
-        run: |
-          mkdir /home/runner/work/wetoon.github.io/temp
-          mv dist/* /home/runner/work/wetoon.github.io/temp
-          rm -rf *
-          mv /home/runner/work/wetoon.github.io/temp/* .
-          rm -rf /home/runner/work/wetoon.github.io/temp
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './'
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
