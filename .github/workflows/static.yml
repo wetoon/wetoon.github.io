@@ -46,6 +46,8 @@ jobs:
           rm -rf ./*
           rm -rf ./.*
           mv /home/runner/work/wetoon.github.io/temp/* .
+          pwd
+          ls
           rm -rf /home/runner/work/wetoon.github.io/temp
       - name: Setup Pages
         uses: actions/configure-pages@v5
