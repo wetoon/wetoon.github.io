@@ -41,8 +41,8 @@ jobs:
         run: bun run build
       - name: Setup Notfound
         run: |
-          cp ./index.html ./404.html
-          sed -i 's|<title>Portfolio | Tiwz</title>|<title>404 | Not Found</title>|' ./404.html
+          cp ./dist/index.html ./dist/404.html
+          sed -i 's#<title>Portfolio | Tiwz</title>#<title>404 | Not Found</title>#' ./dist/404.html
         shell: bash
       - name: Setup Pages
         uses: actions/configure-pages@v5
