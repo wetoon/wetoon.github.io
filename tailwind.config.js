@@ -8,7 +8,13 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                Assistant: 'Assistant, sans-serif'
+                Assistant: "Assistant, sans-serif"
+            },
+            backgroundImage: {
+                hero: "url('/assets/images/hero.webp')"
+            },
+            backgroundPosition: {
+                "b-left": "-40px bottom"
             }
         }
     },
