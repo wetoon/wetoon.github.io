@@ -48,10 +48,10 @@ export default function Portfolio() {
                 <section className="py-10 mx-auto w-10/12 max-w-7xl">
                     <h1 className="uppercase py-8 text-center text-3xl sm:text-4xl font-semibold">language skill</h1>
                     <div className="flex flex-wrap md:pt-10">
-                        <figure className="flex items-center justify-center w-full md:w-5/12">
+                        <figure className="flex items-center justify-center w-full md:w-5/12 fade-right">
                             <img className="w-10/12 max-w-72" src="/assets/images/skill.png" alt="skill" />
                         </figure>
-                        <figure className="flex gap-2 md:gap-8 flex-wrap w-full md:w-7/12">
+                        <figure className="flex gap-2 md:gap-8 flex-wrap w-full md:w-7/12 fade-left">
                             <figcaption className="w-full h-10 md:w-[calc(50%-2rem)]">
                                 <article className="flex py-1 justify-between">
                                     <h4>HTML</h4>
