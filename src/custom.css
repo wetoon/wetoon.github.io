@@ -22,6 +22,7 @@ html::-webkit-scrollbar { width: 0 }
 .fade-right {
     animation: fadeRight linear;
     animation-timeline: view();
+    animation-duration: 400ms;
 }
 
 @keyframes fadeLeft {
