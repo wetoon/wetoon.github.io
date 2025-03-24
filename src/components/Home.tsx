@@ -45,8 +45,8 @@ export default function Portfolio() {
                 </section>
             </header>
             <main className="min-h-screen">
-                <section className="py-10 mx-auto w-11/12 max-w-7xl">
-                    <h1 className="uppercase py-8 text-center text-4xl font-semibold">language</h1>
+                <section className="py-10 mx-auto w-10/12 max-w-7xl">
+                    <h1 className="uppercase py-8 text-center text-3xl sm:text-4xl font-semibold">language skill</h1>
                     <div className="flex flex-wrap md:pt-10">
                         <figure className="flex items-center justify-center w-full md:w-5/12">
                             <img className="w-10/12 max-w-72" src="/assets/images/skill.png" alt="skill" />
