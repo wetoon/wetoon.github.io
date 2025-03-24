@@ -34,6 +34,7 @@ html::-webkit-scrollbar { width: 0 }
 }
 
 .fade-left {
-    animation: fadeLeft 400ms linear;
+    animation: fadeLeft linear;
     animation-timeline: view();
+    animation-duration: 400ms;
 }
