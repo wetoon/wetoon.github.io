@@ -57,7 +57,7 @@ export default function Portfolio() {
                                     <h4>HTML</h4>
                                     <span>100%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-full h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -66,7 +66,7 @@ export default function Portfolio() {
                                     <h4>CSS</h4>
                                     <span>100%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-full h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -75,7 +75,7 @@ export default function Portfolio() {
                                     <h4>JavaScript & TypeScript</h4>
                                     <span>100%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-full h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -84,7 +84,7 @@ export default function Portfolio() {
                                     <h4>PHP</h4>
                                     <span>80%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-4/5 h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -93,7 +93,7 @@ export default function Portfolio() {
                                     <h4>Python</h4>
                                     <span>75%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-3/4 h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -102,7 +102,7 @@ export default function Portfolio() {
                                     <h4>SQL</h4>
                                     <span>75%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-3/4 h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -111,7 +111,7 @@ export default function Portfolio() {
                                     <h4>C#</h4>
                                     <span>75%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-3/4 h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -120,7 +120,7 @@ export default function Portfolio() {
                                     <h4>Go</h4>
                                     <span>50%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-1/2 h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -129,7 +129,7 @@ export default function Portfolio() {
                                     <h4>C++</h4>
                                     <span>30%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-[30%] h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
@@ -138,21 +138,19 @@ export default function Portfolio() {
                                     <h4>C</h4>
                                     <span>25%</span>
                                 </article>
-                                <div className="bg-gray-200">
+                                <div className="bg-amber-600">
                                     <div className="w-3/12 h-2 bg-red-500"></div>
                                 </div>
                             </figcaption>
                         </figure>
                     </div>
                 </section>
-                <section className="py-10 mx-auto w-11/12 max-w-7xl">
+                <section className="py-10 mx-auto w-11/12 max-w-7xl hidden">
                     <h1 className="uppercase py-8 text-center text-4xl font-semibold">skill</h1>
                 </section>
             </main>
             <footer className="h-14 flex text-white bg-gray-950 items-center">
-                <div className="mx-auto w-11/12 max-w-7xl">
-                    <span>Copyright © 2025 Phiraphan</span>
-                </div>
+                <span className="block mx-auto w-11/12 max-w-7xl text-center text-sm md:text-base md:text-start">Copyright © 2025 Phiraphan</span>
             </footer>
         </>
     )
