@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 
 const ScrollAnimation = () => {
   return (
-    <div className="min-h-[200vh]">
+    <div className="h-[300vh]">
       <motion.div
-        className="min-h-screen flex items-center justify-center bg-gray-100"
+        className="w-screen h-screen flex items-center justify-center bg-gray-100"
         initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
       >
@@ -18,9 +18,9 @@ const ScrollAnimation = () => {
       </motion.div>
 
       <motion.div
-        className="min-h-screen flex items-center justify-center bg-gray-200"
+        className="w-screen h-screen flex items-center justify-center bg-gray-200"
         initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
       >
@@ -31,9 +31,9 @@ const ScrollAnimation = () => {
       </motion.div>
 
       <motion.div
-        className="min-h-screen flex items-center justify-center bg-gray-300"
+        className="w-screen h-screen flex items-center justify-center bg-gray-300"
         initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
       >
