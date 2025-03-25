@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const ScrollAnimation = () => {
   return (
-    <div className="h-[300vh] w-screen relative overflow-hidden">
+    <div className="w-screen relative overflow-hidden">
       <motion.div
-        className="h-screen flex items-center justify-center bg-gray-100"
+        className="h-[110vh] flex items-center justify-center bg-gray-100"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -18,7 +18,7 @@ const ScrollAnimation = () => {
       </motion.div>
 
       <motion.div
-        className="h-screen flex items-center justify-center bg-gray-200"
+        className="h-[110vh] flex items-center justify-center bg-gray-200"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -31,7 +31,7 @@ const ScrollAnimation = () => {
       </motion.div>
 
       <motion.div
-        className="h-screen flex items-center justify-center bg-gray-300"
+        className="h-[110vh] flex items-center justify-center bg-gray-300"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
