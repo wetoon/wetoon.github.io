@@ -7,7 +7,7 @@ const ScrollAnimation = () => {
       <motion.div
         className="min-h-screen flex items-center justify-center bg-gray-100"
         initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: -100 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
       >
@@ -19,8 +19,8 @@ const ScrollAnimation = () => {
 
       <motion.div
         className="min-h-screen flex items-center justify-center bg-gray-200"
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 100 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
       >
@@ -33,7 +33,7 @@ const ScrollAnimation = () => {
       <motion.div
         className="min-h-screen flex items-center justify-center bg-gray-300"
         initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: -100 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: false }}
       >
