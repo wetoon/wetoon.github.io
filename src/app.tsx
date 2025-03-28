@@ -7,13 +7,11 @@ import './custom.css'
 
 import Home from './components/Home.tsx'
 import PageNotFound from './components/PageNotFound.tsx'
-import ScrollAnimation from './components/ScrollAnimate.tsx'
 
 createRoot( document.getElementById('app') as HTMLDivElement ).render(
     <BrowserRouter>
         <Routes>
             <Route path='/' element={ <Home /> }></Route>
-            <Route path='/scroll-view' element={ <ScrollAnimation /> }></Route>
             <Route path='*' element={ <PageNotFound /> }></Route>
         </Routes>
     </BrowserRouter>

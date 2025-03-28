@@ -1,5 +1,6 @@
 
-import { Typewriter, Cursor } from "react-simple-typewriter"
+import { Typewriter, Cursor } from 'react-simple-typewriter'
+import { motion } from 'framer-motion'
 
 export default function Portfolio() {
 
@@ -48,10 +49,22 @@ export default function Portfolio() {
                 <section className="py-10 mx-auto w-10/12 max-w-7xl">
                     <h1 className="uppercase py-8 text-center text-3xl sm:text-4xl font-semibold">language skill</h1>
                     <div className="flex flex-wrap md:pt-10">
-                        <figure className="flex items-center justify-center w-full md:w-5/12">
+                        <motion.figure
+                            className="flex items-center justify-center w-full md:w-5/12"
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: false }}
+                        >
                             <img className="w-10/12 max-w-72" src="/assets/images/skill.png" alt="skill" />
-                        </figure>
-                        <figure className="flex gap-2 md:gap-8 flex-wrap w-full md:w-7/12">
+                        </motion.figure>
+                        <motion.figure
+                            className="flex gap-2 md:gap-8 flex-wrap w-full md:w-7/12"
+                            initial={{ opacity: 0, x: 100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: false }}
+                        >
                             <figcaption className="w-full h-10 md:w-[calc(50%-2rem)]">
                                 <article className="flex py-1 justify-between">
                                     <h4>HTML</h4>
@@ -142,7 +155,7 @@ export default function Portfolio() {
                                     <div className="w-3/12 h-2 bg-yellow-600"></div>
                                 </div>
                             </figcaption>
-                        </figure>
+                        </motion.figure>
                     </div>
                 </section>
                 <section className="py-10 mx-auto w-11/12 max-w-7xl hidden">
