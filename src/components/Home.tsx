@@ -45,7 +45,7 @@ export default function Portfolio() {
                     </div>
                 </section>
             </header>
-            <main className="min-h-screen">
+            <main className="min-h-screen relative overflow-hidden">
                 <section className="py-10 mx-auto w-10/12 max-w-7xl">
                     <h1 className="uppercase py-8 text-center text-3xl sm:text-4xl font-semibold">language skill</h1>
                     <div className="flex flex-wrap md:pt-10">
